@@ -3,7 +3,6 @@ FROM dockerfile/ubuntu
 
 # install packages
 RUN apt-get -y update
-RUN apt-get -y upgrade
 RUN apt-get -y install supervisor
 RUN apt-get -y install openssh-server
 RUN apt-get -y install apache2
