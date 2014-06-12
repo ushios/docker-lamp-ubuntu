@@ -1,5 +1,5 @@
 # FROM ubuntu
-FROM dockerfile/ubuntu
+FROM ubuntu:14.04
 MAINTAINER Ushio Shugo <ushio.s@gmail.com>
 
 # update repositories
