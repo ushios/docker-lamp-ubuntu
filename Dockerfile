@@ -11,5 +11,6 @@ RUN apt-get -y install mysql-server
 
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-EXPOSE 22 80
+EXPOSE 22 80 3306
+
 CMD ["/usr/bin/supervisord"]
