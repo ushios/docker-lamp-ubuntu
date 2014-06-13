@@ -19,3 +19,14 @@ Usage
 
     docker run -d -p 80:80 -p 3306:3306 -p 22:22 ushios/lamp
 
+
+#### Access to mysql-server
+
+    mysql -uroot -P 3306 -h 127.0.0.1
+
+You must add remote user before this command.
+
+#### Access to apache2
+
+    http://localhost:80
+
