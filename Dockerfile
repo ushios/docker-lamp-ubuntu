@@ -7,14 +7,14 @@ RUN apt-get -y update
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y upgrade
 
 # install packages
-ADD ./packages.sh /tmp/packages.sh
-RUN chmod 755 /tmp/packages.sh
-RUN /tmp/packages.sh
-RUN rm -f /tmp/packages.sh
+ADD ./root/packages.sh /packages.sh
+RUN chmod 755 /packages.sh
+RUN /packages.sh
+RUN rm -f /packages.sh
 
 # middleware settings
-ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-
+ADD ./root/etc/supervisor/conf.d/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+ADD ./root/etc/mysql/conf.d/bind-address.cnf /etc/mysql/conf.d/bind-address.cnf
 
 EXPOSE 22 80 3306
 
