@@ -16,6 +16,6 @@ RUN rm -f /tmp/packages.sh
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 
-# EXPOSE 22 80 3306
+EXPOSE 22 80 3306
 
 CMD ["/usr/bin/supervisord"]

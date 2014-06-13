@@ -1,6 +1,7 @@
 #/bin/bash
 
 DEBIAN_FRONTEND=noninteractive apt-get -y install supervisor \
+openssh-server \
 apache2 \
 mysql-server-5.6 \
 php5 \
