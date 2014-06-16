@@ -17,7 +17,7 @@ Installed applications
 Usage
 -----
 
-    docker run -d -p 80:80 -p 3306:3306 -p 22:22 ushios/lamp
+    docker run -d -p 80:80 -p 3306:3306 -p 22:22 ushios/lamp-ubuntu
 
 
 #### Access to mysql-server from host.
