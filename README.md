@@ -1,5 +1,5 @@
-Docker lamp
-============
+Docker lamp ubuntu
+==================
 
 Dependencies
 ------------
